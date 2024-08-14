@@ -1,0 +1,618 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for the entire home page */
+.home-container {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+}
+.home-container {
+    text-align: center;
+}
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-size: 1rem;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(100, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.centered-intro {
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+}
+
+.centered-intro h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+    color: #000000; 
+    
+}
+
+.centered-intro p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+    color: #333;
+}
+
+.hhh p {
+    text-align: left;
+}
+
+/* Hero section styling */
+.hero-section {
+    background: #ffe5f8;
+    color: #ef5050;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; /* Use font-weight for bold text */
+    background-position: right;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .hero-section:hover {
+    background-color: #f5f5f5; /* Change background color on hover */
+    box-shadow: 0 8px 16px rgba(210, 210, 210, 0.2); /* Add shadow on hover */
+    transform: translateY(-5px); /* Slightly raise the section on hover */
+  }
+  
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+    text-align: left;
+
+    color: #ff5c2b;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; /* Use font-weight for bold text */
+    color: #333;
+    text-align: left;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .hero-section p:hover {
+    color: #3a3a3a; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge text on hover */
+  }
+  
+
+.cta-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: end;
+    
+}
+
+.cta-button {
+    background: #ff1919;
+    color: #ffffff;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    transition: background 0.3s, color 0.3s;
+    
+}
+
+.cta-button:hover {
+    background: #e7dccd;
+    color: #fff;
+}
+
+/* Impact section styling */
+.impact-section {
+    margin: 40px 0;
+  }
+  
+  .impact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center align heading for better appearance */
+  }
+  
+  .impact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust gap to a more reasonable value */
+    padding: 10px;
+    margin-left: -8%;
+    margin-right: -8%;
+  }
+  
+  .impact-card {
+    background: #fff;
+    padding: 20px; /* Reduced padding for a better fit */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .impact-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .impact-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .impact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; /* Use font-weight for bold text */
+    text-align: center; /* Center align heading text */
+  }
+  
+  .impact-card p {
+    font-size: 1rem;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; /* Use font-weight for bold text */
+    text-align: center; /* Center align paragraph text */
+  }
+  
+/* About section styling */
+.about-section {
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.home-container {
+    text-align: center;
+}
+
+.centered-intro {
+    margin-bottom: 20px;
+}
+
+.centered-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.centered-intro p {
+    font-size: 1.2rem;
+}
+
+.hero-section {
+    background: url('./images/school.jpg') #ffe5f8 no-repeat center;
+    background-size: 40%;
+    background-position: 100%;
+    color: #000000;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.trusted-platform {
+    margin: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.impact-section {
+    padding: 20px;
+}
+
+.impact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.impact-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.impact-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.impact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.impact-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-size: 1.2 rem;
+    color: #606060;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    padding: 5%;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.faq-section {
+  padding: 80px;
+  margin-top: 10%;
+  margin-bottom: 0%;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold; /* Use font-weight for bold text */
+  color: #333;
+  font-size: large;
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.faq-section:hover {
+  background-color: #f9f9f9; /* Change background color on hover */
+}
+
+.faq-questions {
+  margin-top: 20px;
+  font-weight: bold; /* Use font-weight for bold text */
+  padding: 10px;
+  text-align: left;
+  margin-left: 60px;
+  transition: color 0.3s; /* Smooth transition for text color on hover */
+}
+
+.faq-questions:hover {
+  color: #007bff; /* Change text color on hover */
+}
+
+.faq-question {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: left;
+  margin-left: -50px;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.faq-question:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.faq-question h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -50px;
+}
+
+.faq-answer {
+  padding: 5%;
+  margin-left: -10px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #707070;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold; /* Use font-weight for bold text */
+  text-align: left;
+}
+
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: #ff3916e1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #9c9a9a;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #eff0f1;
+    color: rgba(59, 59, 59, 0.562);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 2.0rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+    text-align: left;
+    margin-left: 28px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #fdfdfd;
+    padding-top: 1rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .highlight-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.highlight-section h1 {
+    font-size: 2.5rem;
+    color: #f00d0d;
+    margin-bottom: 20px;
+}
+
+.highlight-section h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.highlight-section h3 {
+    font-size: 1.8rem;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.highlight-section p2, .highlight-section p3 {
+    font-size: 1.2rem;
+    color: #555;
+   
+    margin-bottom: 0.5rem;
+}
+.trusted-platform {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trusted-platform h1 {
+    font-size: 3.5rem;
+    color: #000000;
+    line-height: 1.2; /* Adjust line height for better readability */
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+}
+
+.abd {
+    background-color: #eff0f1;
+    color: rgba(0, 0, 0, 0.562);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.abc {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.abc h3 {
+    font-size: 2.0rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+    color: #333;
+    margin-left: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.abc p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: bold;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fdfdfd;
+    padding-top: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+.brands-section {
+    padding: 20px;
+}
+
+.brands-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brands-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(16.66% - 20px); /* 16.66% for six cards in one row with gap */
+    text-align: center; 
+    flex: 1 1 calc(16.66% - 20px);
+}
+
+.brands-card img {
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.brands-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.brands-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.corporate-partners-heading h2 {
+    font-size: 1.8rem;
+    color: #252525;
+    margin: 0;
+    padding: 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    letter-spacing: 1px;
+}

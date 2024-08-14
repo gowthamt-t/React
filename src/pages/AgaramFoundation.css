@@ -1,0 +1,182 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Agaram Foundation Page */
+.agaram-foundation-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Joker Section */
+.joker-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.joker-section h1 {
+  font-size: 2.5em;
+  color: #e34343;
+  margin-bottom: 20px;
+}
+
+.joker-section p {
+  font-size: 1.2em;
+  color: #555;
+  font-weight: 300; /* Changed from 100 to 300 for better readability */
+}
+
+/* Half Card Section */
+.half-card-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.half-card {
+  display: flex;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.half-card-image {
+  flex: 1;
+}
+
+.half-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.half-card-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.half-card-content h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.half-card-content p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Section Styling */
+.mission-section,
+.impact-stories-section,
+.donate-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-section h2,
+.impact-stories-section h2,
+.donate-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #444;
+  ;
+}
+
+.mission-section p,
+.donate-section p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 10%;
+}
+
+.impact-stories-section {
+  background-color: #fafafa;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+/* Story Card */
+.story-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.story-card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.story-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Donate Section */
+.donate-section {
+  text-align: center;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+  padding: 50px 20px;
+}
+
+.donate-button {
+  margin-top: 6%;
+  background-color: #ff4a18;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #ff9034;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .half-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .half-card-content {    
+    padding: 20px;
+  }
+
+  .joker-section h1,
+  .joker-section p {
+    font-size: 2em;
+  }
+}

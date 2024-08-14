@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.login-box {
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(255, 255, 255);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.login-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color: #ff4f15;
+}
+
+.login-method-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-method-btn.active {
+    background: #ff4209;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #fff;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #7c7c7c;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #fff; /* Input background color set to white */
+}
+
+.form-group input::placeholder {
+    color: #747474; /* Placeholder text color set to black */
+    background-color: #fff; /* Placeholder background color set to white */
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff4209;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background: #ff430f;
+}
+
+.login-footer {
+    margin-top: 20px;
+}
+
+.login-footer p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.login-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
